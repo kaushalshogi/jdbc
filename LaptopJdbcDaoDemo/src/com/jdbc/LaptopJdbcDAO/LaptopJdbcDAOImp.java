@@ -177,7 +177,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 
 	@Override
 	public void readSingleRecordById() {
-		String url="jdbc:mysql://localhost:3306/employees";
+		String url="jdbc:mysql://localhost:3306/laptops";
 		String userName="root";
 		String password="Shogi@461676";
 
@@ -193,7 +193,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 
 			while(rs.next()) {
 
-				System.out.println("Salary :" +rs.getDouble(1));
+				System.out.println("Brand :" +rs.getString(1));
 			}
 		}
 		catch(SQLException se) {
@@ -240,7 +240,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 				System.out.println("ID :" +rs.getInt(1));
 				System.out.println("brand :" +rs.getString(2));
 				System.out.println("color :" +rs.getString(3));
-				System.out.println("price :" +rs.getDouble(4));
+				System.out.println("price :" +rs.getInt(4));
 			
 			}
 		}
@@ -313,7 +313,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 	@Override
 	public void readLaptopBrandAndPriceById() {
 		
-		String url="jdbc:mysql://localhost:3306/employees";
+		String url="jdbc:mysql://localhost:3306/laptops";
 		String userName="root";
 		String password="Shogi@461676";
 
@@ -329,7 +329,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 
 			while(rs.next()) {
 
-				System.out.println("Salary :" +rs.getDouble(1));
+				System.out.println("brand and price :" +rs.getInt(1));
 			}
 		}
 		catch(SQLException se) {
@@ -356,7 +356,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 
 	@Override
 	public void readLaptopcolorByID() {
-		String url="jdbc:mysql://localhost:3306/employees";
+		String url="jdbc:mysql://localhost:3306/laptops";
 		String userName="root";
 		String password="Shogi@461676";
 
@@ -372,7 +372,7 @@ public class LaptopJdbcDAOImp implements LaptopJdbcDAO {
 
 			while(rs.next()) {
 
-				System.out.println("Salary :" +rs.getDouble(1));
+				System.out.println("color :" +rs.getString(1));
 			}
 		}
 		catch(SQLException se) {

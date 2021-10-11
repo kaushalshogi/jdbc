@@ -9,21 +9,21 @@ public class LaptopDAOTest {
 		
 		laptop.readAllRecords();
 		
-		laptop.deletLaptopById();
+		//laptop.deletLaptopById();
 		
-		laptop.readLaptopBrandAndPriceById();
+		//laptop.readLaptopBrandAndPriceById();
 		
-		laptop.readLaptopcolorByID();
+		//laptop.readLaptopcolorByID();
 		
-		laptop.readLaptopPriceById();
+		//laptop.readLaptopPriceById();
 		
-		laptop.readSingleRecordById();
+		//laptop.readSingleRecordById();
 		
-		laptop.saveLaptopRecord();
+		//laptop.saveLaptopRecord();
 		
-		laptop.updateBrand();
+		//laptop.updateBrand();
 		
-		laptop.updateBrandAndPrice();
+		//laptop.updateBrandAndPrice();
 		
 		
 	}
