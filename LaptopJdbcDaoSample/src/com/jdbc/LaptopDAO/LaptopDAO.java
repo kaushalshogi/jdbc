@@ -2,22 +2,27 @@ package com.jdbc.LaptopDAO;
 
 public interface LaptopDAO {
 
-	void saveLaptopRecord();
+	void saveLaptopRecord(int id, String color, String brand, int price);
 
-	void  updateBrand();
+	void  updateBrand(String brand,int id);
 
-	void updateBrandAndPrice();
+	void updateBrandAndPrice(String brand,int price, int id);
 
-	void deletLaptopById();
+	void deletLaptopById(int id);
 
-	void readSingleRecordById();
+	void readSingleRecordById(int id);
 
 	void readAllRecords();
 
-	void readLaptopPriceById();
+	void readLaptopPriceById(int id);
 
-	void readLaptopBrandAndPriceById();
+	void readLaptopBrandAndPriceById(int id);
 
-	void readLaptopcolorByID();
+	void readLaptopcolorByID(int id);
+
+
+	
+
+	
 
 }
